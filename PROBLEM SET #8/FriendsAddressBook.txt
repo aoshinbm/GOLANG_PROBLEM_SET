@@ -1,0 +1,28 @@
+Vaishali, 2nd Tree Street, Mumbai, 123789456, 9897745687
+
+
+Roma, Nehru Street, Virar, 654789123
+
+
+Rajesh, "Gandhi road", Pune, 369852147, 852147963
+
+
+John, Gokuldham, Nasik, 1597536482, 6842351759
+
+
+Bindu, "MIDC", Nagpur, 9987456123
+
+
+Alvin, 2nd Tree Street, Mumbai, 9988445566, 7748596321
+
+
+Tijo, Burgundy Road, Mumbai, 8845679123
+
+
+Jaison, 2nd Tree Street, Daman, 9897745687, 123789456
+
+
+Alinda, Oberoi Streets, Mumbai, 9986754123, 7715987455
+
+
+Christy, Goregaon, Virar, 9222248796, 9048756321

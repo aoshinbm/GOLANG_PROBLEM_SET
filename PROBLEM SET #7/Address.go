@@ -40,7 +40,7 @@ func main() {
 	fmt.Println("")
 
 	fmt.Printf("\nConverting slice of structs to JSON \n")
-	bytesStructSlice, _ := json.MarshalIndent(Friends, " ", "\t")
+	bytesStructSlice, _ := json.MarshalIndent(Friends, " ",\ "\t")
 	json.MarshalIndent(Friends, " ", "\t")
 	fmt.Println(string(bytesStructSlice))
 
