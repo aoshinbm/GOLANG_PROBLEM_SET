@@ -1,3 +1,4 @@
+// do it in csv format also make file in .csv
 package main
 
 import (
@@ -8,12 +9,13 @@ import (
 )
 
 type quiz struct {
-	question       string
-	option_a       string
-	option_b       string
-	option_c       string
-	option_d       string
-	correct_answer string
+	question string
+	option_a string
+	option_b string
+	option_c string
+	option_d string
+	answer   string
+	//correct_answer string
 }
 
 func checkFileExistorNot() {
@@ -42,9 +44,20 @@ func checkFileExistorNot() {
 //	fmt.Printf("\nData: %s \n", file)
 }
 
-func quizQues&Ans()  {
+	func quizQues&Ans()  {
 
-}
+
+		for i,j:=range quiz
+		if quiz[i]==correctoption{
+			fmt.Println("answers is correct")
+			points++
+		}
+		else{
+			fmt.Println("Wrong")
+			fmt.Println("Correct option is ")
+			points--
+		}
+	}
 */
 func main() {
 	fmt.Println("First Lets check file exists or not")

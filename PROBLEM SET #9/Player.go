@@ -30,9 +30,7 @@ func main() {
 
 	// read csv values using csv.Reader
 	csvReader := csv.NewReader(f)
-	//fmt.Printf("%T", csvReader)
-
-	for i := 1; i > 0; i++ {
+	for {
 		playerData, err := csvReader.Read()
 		if err == io.EOF {
 			break
@@ -41,9 +39,6 @@ func main() {
 			log.Fatal(err)
 		}
 
-		//fmt.Printf("%v\n", playerData)
-		// print the player data, excluding the header
-		//fmt.Println(header[1:])
-		fmt.Printf("%v\n", playerData[1:])
+		fmt.Printf("%+v\n", playerData)
 	}
 }

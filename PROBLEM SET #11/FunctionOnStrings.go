@@ -2,28 +2,17 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
-func characterFilter(str []string) []string {
-
-	charcterString := []int{}
+func characterFilter(str []string, myFun func(string) bool) string {
+	sliceOfString := make([]string, 0)
 	for _, strrings := range str {
-		if strrings[i] == "b" {
-			charcterString = append(charcterString, strrings)
+		if myFunc(strrings) {
+			sliceOfString = append(sliceOfString, strrings)
 		}
 	}
-	return charcterString
-}
-
-func threeLettersFilter(str []string) []string {
-
-	threeLetters := []int{}
-	for _, strrings := range str {
-		if len(strrings) == 3 {
-			threeLetters = append(threeLetters, strrings)
-		}
-	}
-	return threeLetters
+	return sliceOfString
 }
 
 func main() {
@@ -31,13 +20,18 @@ func main() {
 	str := []string{"ant", "beetle", "bee", "wasp", "butterfly", "fly", "moth"}
 	fmt.Println("---------------------------------------")
 
-	evenNumbers := eventFilter(numbers)
-	fmt.Println(evenNumbers)
+	wordsWith3Letters := characterFilter(str, func(strr []string) bool {
+		return (len(strrings) == 3) == 0
+	})
+	fmt.Println(wordsWith3Letters)
 
 	fmt.Println("---------------------------------------")
 
-	oddNumbers := oddFilter(numbers)
-	fmt.Println(oddNumbers)
+	str2 := "b"
+	wordsWithB := characterFilter(string1, func(strr []string) bool {
+		return strings.Contains(string1, str2) == 0
+	})
+	fmt.Println(wordsWith3Letters)
 
 }
 

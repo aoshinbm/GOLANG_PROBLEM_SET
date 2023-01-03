@@ -38,16 +38,3 @@ func main() {
 	})
 	fmt.Println(divisiblee)
 }
-
-/* function  -- ()
-
-func functionName (paramtere list -- Any data type(User defiend or golang provide) ) retun type {
-
-}
-
-Higher order function --- () --- Abstracting the logic
-
-func functionName (paramtere list -- another func or func's) ) retun func {
-
-}
-*/
